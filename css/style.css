@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.conter{
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  position: relative;
+}
+.barside{
+  height: 100vh;
+  flex-basis: 10%;
+  background-color: black;  
+  z-index: 1;
+}
+.barnav{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100px;
+  background-color: midnightblue;
+  opacity: 70%;
+}
+.content{
+  align-self: center;
+  height: 100vh;
+  flex-grow: 1;
+  background-color: silver;
+}
+.footer{
+  z-index: 1;
+  background-color: dimgray;
+  height: 100px;
+  width:100vw;
+  position: fixed;
+  bottom:0;
+}
