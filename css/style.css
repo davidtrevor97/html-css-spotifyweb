@@ -4,49 +4,45 @@
   box-sizing: border-box;
 }
 .conter{
-  height: 100vh;
-  background-color: grey;
+  background-color: gray;
+  height: calc(100vh - 100px);
   display: flex;
-  position: relative;
 }
 .barside{
-  height: 100%;
-  flex-basis: 10%;
+  width: 100px;
   background-color: black;
+}
+
+.conter-right{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: white;
+  position: relative;
   z-index: 1;
-  flex-shrink: 0;
 }
 .barnav{
   position: absolute;
   top: 0;
-  right: 0;
-  width: 90%;
   height: 100px;
-  background-color: midnightblue;
+  width: 100%;
+  background-color: green;
   opacity: 70%;
 }
 .content{
-  align-self: center;
+  padding-top: 100px;
+  overflow-y: scroll;
   height: 100%;
-  flex-grow: 1;
-  background-color: silver;
-  overflow: scroll;
-  padding: 100px 0 0 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  background-color: yellow;
 }
 .content .section{
-  width: 100%;
-  background-color: red;
-  flex-basis: 30%;
-  border: 1px solid black;
+  height: 120px;
 }
 .footer{
-  z-index: 1;
   background-color: dimgray;
   height: 100px;
-  width:100%;
+  width: 100%;
   position: fixed;
-  bottom:0;
+  bottom: 0;
+  z-index: 1;
 }
