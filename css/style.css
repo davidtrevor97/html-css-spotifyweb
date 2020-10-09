@@ -14,6 +14,9 @@
 .margin-big{
   margin-bottom: 50px;
 }
+.dis-none{
+  display: none;
+}
 .playlist{
   font-size: 13px;
   color: white;
@@ -25,6 +28,18 @@
 }
 .playlist i{
   font-size: 25px;
+}
+.evidenza{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  list-style: none;
+}
+.evidenza li{
+  display: inline-block;
+  margin-right: 10px;
 }
 /* CONTER */
 .conter{
@@ -72,7 +87,8 @@
   .barside .menu i,
   .barside .menu h2,
   .barside .account span,
-  .barside .account h4{
+  .barside .account h4,
+  .barside .menu .logo{
     display: none;
   }
   .account > div:first-of-type{
@@ -81,8 +97,13 @@
   .barside{
     flex-basis: 80px;
   }
+  .dis-none{
+    display: block;
+    width: 20px;
+  }
 }
 /* CONTER-RIGHT */
+  /* barnav */
 .conter-right{
   display: flex;
   flex-direction: column;
@@ -92,12 +113,25 @@
 }
 .barnav{
   position: absolute;
+  display: flex;
   top: 0;
   height: 100px;
   width: 100%;
   background-color: black;
   opacity: 70%;
+  justify-content: flex-end;
 }
+.barnav button{
+  margin-right: 20px;
+  align-self: center;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+  /* content */
 .content{
   padding: 120px 0 20px 20px;
   overflow:auto;
