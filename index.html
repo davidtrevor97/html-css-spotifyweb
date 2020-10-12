@@ -2,11 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify Premium</title>
   </head>
   <body>
+    <!-- CONTENITORE SUPERIORE -->
     <div class="conter">
       <div class="barside">
         <div class="menu">
@@ -124,8 +126,8 @@
             </ul>
           </div>
           <div class="section margin-big">
-            <h2 class="margin-big">Creato per John Doe</h2>
-            <h5 class="white-shade">Più ascolti, più accurati saranno i suggerimenti.</h5>
+              <h2 class="margin-small">Creato per John Doe</h2>
+              <h5 class="white-shade margin-big">Più ascolti, più accurati saranno i suggerimenti.</h5>
             <ul>
               <li>
                 <img class="margin-small" src="./img/radar.jpeg" alt="">
@@ -140,9 +142,9 @@
             </ul>
           </div>
           <div class="section margin-big">
-            <h2 class="margin-big">Artisti più popolari</h2>
-            <h5 class="white-shade">Più ascolti, più accurati saranno i suggerimenti.</h5>
-            <ul>
+              <h2 class="margin-small">Artisti più popolari</h2>
+              <h5 class="white-shade margin-big">Più ascolti, più accurati saranno i suggerimenti.</h5>
+            <ul class="block">
               <li>
                 <img class="margin-small round" src="./img/einaudi.jpeg" alt="">
                 <h4 class="margin-small">Heavy Metal</h4>
@@ -158,8 +160,46 @@
         </div>
       </div>
     </div>
-    <div class="footer">
 
+    <!-- CONTENITORE INFERIORE -->
+    <div class="footer white">
+      <div class="f-left">
+        <img src="./img/sinister.jpeg" alt="">
+        <div>
+          <h4 class="white f-sz-15 ">Sinister</h4>
+          <span class="white-shade block f-sz-12">Brano Nome</span>
+        </div>
+        <div>
+          <i class="far fa-heart white-shade"></i>
+          <i class="far fa-folder white-shade"></i>
+        </div>
+      </div>
+      <div class="f-center">
+        <div >
+          <i class="fas fa-random f-sz-15 "></i>
+          <i class="fas fa-step-backward f-sz-15 "></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward f-sz-15 "></i>
+          <i class="fas fa-redo f-sz-15 "></i>
+        </div>
+        <div class="block">
+          <span class="f-sz-12">0:25</span>
+          <div class="line inline">
+            <div>
+            </div>
+          </div>
+          <span class="f-sz-12">4:35</span>
+        </div>
+      </div>
+      <div class="f-right">
+        <i class="fas fa-list f-sz-15 "></i>
+        <i class="fas fa-tv f-sz-15 "></i>
+        <i class="fas fa-volume-up f-sz-15 "></i>
+        <div class="line inline">
+          <div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

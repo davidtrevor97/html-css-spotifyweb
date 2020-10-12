@@ -3,12 +3,10 @@
   padding:0;
   box-sizing: border-box;
 }
-h2,
-h3,
-h4,
-h5{
-  display: block;
+body{
+  font-family: 'Roboto', sans-serif;
 }
+/*  */
 /* UTILITIES */
 .white{
   color: white;
@@ -53,6 +51,18 @@ h5{
 .round{
   border-radius: 50%;
 }
+.inline{
+  display: inline-block;
+}
+.block{
+  display: block;
+}
+.f-sz-12{
+  font-size: 12px;
+}
+.f-sz-15{
+  font-size: 15px;
+}
 /* CONTER */
 .conter{
   height: calc(100vh - 80px);
@@ -61,7 +71,8 @@ h5{
 }
   /* BARSIDE */
 .barside{
-  flex-basis: 200px;
+  flex-basis: 150px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
 }
@@ -164,11 +175,86 @@ h5{
 .content .section img{
   width: 100%;
 }
+/* FOOTER */
 .footer{
   background-color: #212121;
   height: 80px;
   width: 100%;
   position: fixed;
   bottom: 0;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .f-left,
+.footer .f-right{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .f-center{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .f-left img{
+  width: 50px;
+  height: 50px;
+}
+.footer .f-left i,
+.footer .f-left div{
+  align-self:center;
+  margin-left: 5px;
+}
+.footer .f-center .line{
+  width: 250px;
+  height: 3px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.footer .f-center .line div{
+  width: 20px;
+  background-color: white;
+  height: 3px;
+}
+.footer .f-right .line{
+  width: 100px;
+  height: 3px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+.footer .f-right .line div{
+  width: 10px;
+  background-color: white;
+  height: 3px;
+}
+.footer .f-center i,
+.footer .f-right i{
+  margin-right: 10px;
+}
+.footer .f-center i:nth-of-type(3){
+  font-size: 25px;
+}
+@media screen and (max-width : 680px){
+  .f-sz-12{
+    font-size: 10px;
+  }
+  .f-sz-15{
+    font-size: 12px;
+  }
+  .footer .f-center i:nth-of-type(3){
+    font-size: 15px;
+  }
+  .footer .f-left img{
+    width: 38px;
+    height: 38px;
+  }
+  .footer .f-center .line{
+    width: 100px;
+  }
+  .footer .f-right .line{
+    width: 55px;
+  }
 }
